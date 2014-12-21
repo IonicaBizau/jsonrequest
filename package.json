@@ -11,7 +11,7 @@
     "ul": "^1.0.0"
   },
   "devDependencies": {
-    "lien": "^0.0.6",
+    "lien": "^0.0.6"
   },
   "scripts": {
     "test": "node test"
