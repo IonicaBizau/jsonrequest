@@ -36,10 +36,15 @@ Then the callback function is called (with `error` and `data` parameters).
 
 ### Params
 - **String|Object** `options`: A string being the request url or an object containing the following fields:
+ - `url` (String): The request url.
+ - `method` (String): The request method.
+ - `data` (Object): The request POST data.
+
 - **Function** `callback`: The callback function.
 
 ### Return
 - **Object** The request object.
+
 
 # How to contribute
 1. File an issue in the repository, using the bug tracker, describing the
