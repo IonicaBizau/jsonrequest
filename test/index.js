@@ -10,13 +10,17 @@ var server = new Lien({
 });
 
 // Handle "/"
-server.page.add("/", function (lien) {
+server.page.add(/^\/$/, function (lien) {
     lien.end({
         Hello: "World"
     });
-}).add("/hello", function (lien) {
+})
+
+// Handle "/hello"
+server.page.add(/^\/hello$/, function (lien) {
     lien.end({
-        Hello: "Mars"
+        method: lien.method
+      , data: lien.data
     });
 });
 
@@ -24,8 +28,11 @@ setTimeout(function () {
     JsonRequest("http://localhost:9000/", function (err, data) {
         console.log(err || data);
         JsonRequest({
-            url: "http://localhost:9000/"
-          , pathname: "/hello"
+            url: "http://localhost:9000/hello"
+          , method: "POST"
+          , data: {
+                "some": "data"
+            }
         }, function (err, data) {
             console.log(err || data);
             process.exit(0);
