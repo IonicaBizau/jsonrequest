@@ -19,5 +19,6 @@ server.page.add("/", function (lien) {
 setTimeout(function () {
     JsonRequest("http://localhost:9000/", function (err, data) {
         console.log(err || data);
+        process.exit(0);
     });
 }, 100);
