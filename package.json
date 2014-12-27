@@ -1,13 +1,12 @@
 {
   "name": "jsonrequest",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A minimalist library for making requests to JSON resources.",
   "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "jxutils": "^0.1.6",
     "ul": "^1.0.0"
   },
   "devDependencies": {
