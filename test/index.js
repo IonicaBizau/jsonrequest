@@ -24,7 +24,8 @@ server.page.add(/^\/hello$/, function (lien) {
     });
 });
 
-setTimeout(function () {
+server.on("load", function (err) {
+    if (err) { throw err; }
     JsonRequest("http://localhost:9000/", function (err, data) {
         console.log(err || data);
         JsonRequest({
@@ -35,7 +36,10 @@ setTimeout(function () {
             }
         }, function (err, data) {
             console.log(err || data);
-            process.exit(0);
+            JsonRequest("https://status.github.com/api.json", function (err, data) {
+                console.log(err || data);
+                process.exit(0);
+            })
         });
     });
-}, 100);
+});
