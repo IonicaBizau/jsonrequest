@@ -33,8 +33,7 @@ JsonRequest({
 
 # Documentation
 ### `JsonRequest(options, data, callback)`
-Creates an HTTP request using the options passed in the first parameter.
-Then the callback function is called (with `error` and `data` parameters).
+Creates the http(s) request and parses the response.
 
 #### Params
 - **String|Object** `options`: A string representing the request url or an object passed to the `tinyreq` function.
