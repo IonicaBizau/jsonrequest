@@ -28,12 +28,8 @@ server.on("load", function (err) {
     if (err) { throw err; }
     JsonRequest("http://localhost:9000/", function (err, data) {
         console.log(err || data);
-        JsonRequest({
-            url: "http://localhost:9000/hello"
-          , method: "POST"
-          , data: {
-                "some": "data"
-            }
+        JsonRequest("http://localhost:9000/hello", {
+            "some": "data"
         }, function (err, data) {
             console.log(err || data);
             JsonRequest("https://status.github.com/api.json", function (err, data) {
