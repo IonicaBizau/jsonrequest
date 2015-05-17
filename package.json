@@ -3,17 +3,8 @@
   "version": "1.1.0",
   "description": "A minimalist library for making requests to JSON resources.",
   "main": "lib/index.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "ul": "2.1.0"
-  },
-  "devDependencies": {
-    "lien": "^0.0.9"
-  },
   "scripts": {
-    "test": "node test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -29,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/node-jsonrequest/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-jsonrequest"
+  "homepage": "https://github.com/IonicaBizau/node-jsonrequest",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "tinyreq": "^1.0.0",
+    "ul": "^2.1.0"
+  },
+  "devDependencies": {
+    "lien": "^0.0.9",
+    "mocha": "^2.2.5"
+  }
 }
