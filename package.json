@@ -7,10 +7,10 @@
     "test": "test"
   },
   "dependencies": {
-    "ul": "^1.0.0"
+    "ul": "2.1.0"
   },
   "devDependencies": {
-    "lien": "^0.0.6"
+    "lien": "^0.0.9"
   },
   "scripts": {
     "test": "node test"
