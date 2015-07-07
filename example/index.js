@@ -1,41 +1,17 @@
 // Dependencies
-var JsonRequest = require("../lib")
-  , Lien = require("lien")
-  ;
+var JsonRequest = require("../lib");
 
-// Init lien server
-var server = new Lien({
-    host: "localhost"
-  , port: 9000
+// Make a request to GitHub API
+JsonRequest("https://api.github.com/users/IonicaBizau", function (err, data) {
+    console.log(err || data);
 });
-
-// Handle "/"
-server.page.add(/^\/$/, function (lien) {
-    lien.end({
-        Hello: "World"
-    });
-})
-
-// Handle "/hello"
-server.page.add(/^\/hello$/, function (lien) {
-    lien.end({
-        method: lien.method
-      , data: lien.data
-    });
-});
-
-server.on("load", function (err) {
-    if (err) { throw err; }
-    JsonRequest("http://localhost:9000/", function (err, data) {
-        console.log(err || data);
-        JsonRequest("http://localhost:9000/hello", {
-            "some": "data"
-        }, function (err, data) {
-            console.log(err || data);
-            JsonRequest("https://status.github.com/api.json", function (err, data) {
-                console.log(err || data);
-                process.exit(0);
-            })
-        });
-    });
-});
+// => {
+//   "login": "IonicaBizau",
+//   "id": 2864371,
+//   "avatar_url": "https://avatars.githubusercontent.com/u/2864371?v=3",
+//   "gravatar_id": "",
+//   "url": "https://api.github.com/users/IonicaBizau",
+//   "html_url": "https://github.com/IonicaBizau",
+//   "followers_url": "https://api.github.com/users/IonicaBizau/followers",
+//   ...
+// }
