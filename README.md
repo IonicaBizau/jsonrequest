@@ -5,7 +5,7 @@ A tiny library for requesting and getting JSON resources.
 ## Installation
 
 ```sh
-$ npm i -g jsonrequest
+$ npm i jsonrequest
 ```
 
 ## Example
@@ -52,6 +52,8 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`bnotify`](https://github.com/IonicaBizau/bnotify)
 
  - [`gh.js`](https://github.com/IonicaBizau/gh.js)
+
+ - [`homebridge-domotiga`](https://github.com/Samfox2/homebridge-domotiga#readme) by Sam Fox
 
  - [`ipinfo`](https://github.com/IonicaBizau/node-ipinfo)
 
