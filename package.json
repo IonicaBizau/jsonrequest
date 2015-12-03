@@ -1,6 +1,6 @@
 {
   "name": "jsonrequest",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "A tiny library for requesting and getting JSON resources.",
   "main": "lib/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "minimalist"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
-  "license": "KINDLY",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/node-jsonrequest/issues"
   },
