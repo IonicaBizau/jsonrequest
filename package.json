@@ -1,6 +1,6 @@
 {
   "name": "jsonrequest",
-  "version": "3.2.1",
+  "version": "4.0.0",
   "description": "A tiny library for requesting and getting JSON resources.",
   "main": "lib/index.js",
   "scripts": {
@@ -26,11 +26,11 @@
     "test": "test"
   },
   "dependencies": {
-    "tinyreq": "^2.0.0",
+    "tinyreq": "^3.0.1",
     "ul": "^5.0.0"
   },
   "devDependencies": {
-    "lien": "0.0.11",
+    "lien": "^1.0.1",
     "mocha": "^2.2.5"
   }
 }

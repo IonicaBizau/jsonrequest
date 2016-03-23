@@ -2,13 +2,13 @@
 
 > A tiny library for requesting and getting JSON resources.
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save jsonrequest
 ```
 
-## Example
+## :clipboard: Example
 
 ```js
 // Dependencies
@@ -30,9 +30,9 @@ JsonRequest("https://api.github.com/users/IonicaBizau", function (err, data) {
 // }
 ```
 
-## Documentation
+## :memo: Documentation
 
-### `JsonRequest(options, data, callback)`
+### `jsonRequest(options, data, callback)`
 Creates the http(s) request and parses the response.
 
 #### Params
@@ -43,23 +43,19 @@ Creates the http(s) request and parses the response.
 #### Return
 - **Object** The request object.
 
-## How to contribute
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`bnotify`](https://github.com/IonicaBizau/bnotify)
+ - [`bnotify`](https://github.com/IonicaBizau/bnotify)—A notification system written in NodeJS using the BAT platform.
+ - [`gh.js`](https://github.com/IonicaBizau/gh.js)—Tiny GitHub API wrapper for server and client.
+ - [`homebridge-domotiga`](https://github.com/Samfox2/homebridge-domotiga#readme) (by Sam Fox)—domotiga plugin for homebridge: https://github.com/nfarina/homebridge
+ - [`ipinfo`](https://github.com/IonicaBizau/node-ipinfo)—An http://ipinfo.io NodeJS wrapper.
+ - [`proxyneedle`](https://github.com/selfrefactor/proxyneedle#readme) (by Dejan Toteff)—Proxified website scraping using autoupdated list of free proxies
 
- - [`gh.js`](https://github.com/IonicaBizau/gh.js)
-
- - [`homebridge-domotiga`](https://github.com/Samfox2/homebridge-domotiga#readme) by Sam Fox
-
- - [`ipinfo`](https://github.com/IonicaBizau/node-ipinfo)
-
- - [`proxyneedle`](https://github.com/selfrefactor/proxyneedle#readme) by Dejan Toteff
-
-## License
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 

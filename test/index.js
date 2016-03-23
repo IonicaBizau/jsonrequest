@@ -11,14 +11,14 @@ var server = new Lien({
 });
 
 // Handle "/"
-server.page.add(/^\/$/, function (lien) {
+server.addPage("/", function (lien) {
     lien.end({
         Hello: "World"
     });
 })
 
 // Handle "/hello"
-server.page.add(/^\/hello$/, function (lien) {
+server.addPage("/hello", function (lien) {
     lien.end({
         method: lien.method
       , data: lien.data
