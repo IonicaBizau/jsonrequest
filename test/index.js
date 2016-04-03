@@ -24,6 +24,9 @@ server.addPage("/hello", function (lien) {
       , data: lien.data
     });
 });
+server.addPage("/empty", function (lien) {
+    lien.end("");
+});
 
 
 server.on("load", function (err) {
@@ -72,6 +75,14 @@ it("should support get method and https protocol", function (cb) {
     JsonRequest("https://status.github.com/api.json", function (err, data) {
         Assert.equal(err, null);
         Assert.equal(data.constructor === Object, true);
+        cb();
+    });
+});
+
+it("should parse empty responses successfully", function (cb) {
+    JsonRequest("http://localhost:9000/empty", function (err, data) {
+        Assert.equal(err, null);
+        Assert.equal(data, "");
         cb();
     });
 });

@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:IonicaBizau/node-jsonrequest.git"
+    "url": "git@github.com:IonicaBizau/jsonrequest.git"
   },
   "keywords": [
     "json",
@@ -18,9 +18,9 @@
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IonicaBizau/node-jsonrequest/issues"
+    "url": "https://github.com/IonicaBizau/jsonrequest/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-jsonrequest",
+  "homepage": "https://github.com/IonicaBizau/jsonrequest",
   "directories": {
     "example": "example",
     "test": "test"
