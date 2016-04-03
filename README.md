@@ -1,14 +1,17 @@
-# jsonrequest [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Travis](https://img.shields.io/travis/IonicaBizau/node-jsonrequest.svg)](https://travis-ci.org/IonicaBizau/node-jsonrequest/) [![Version](https://img.shields.io/npm/v/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Downloads](https://img.shields.io/npm/dt/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+# jsonrequest [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Travis](https://img.shields.io/travis/IonicaBizau/jsonrequest.svg)](https://travis-ci.org/IonicaBizau/jsonrequest/) [![Version](https://img.shields.io/npm/v/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Downloads](https://img.shields.io/npm/dt/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > A tiny library for requesting and getting JSON resources.
 
 ## :cloud: Installation
-
+    
 ```sh
 $ npm i --save jsonrequest
 ```
 
+            
 ## :clipboard: Example
+
+        
 
 ```js
 // Dependencies
@@ -29,9 +32,9 @@ JsonRequest("https://api.github.com/users/IonicaBizau", function (err, data) {
 //   ...
 // }
 ```
-
+    
 ## :memo: Documentation
-
+        
 ### `jsonRequest(options, data, callback)`
 Creates the http(s) request and parses the response.
 
@@ -43,6 +46,7 @@ Creates the http(s) request and parses the response.
 #### Return
 - **Object** The request object.
 
+        
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
@@ -56,9 +60,9 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`proxyneedle`](https://github.com/selfrefactor/proxyneedle#readme) (by Dejan Toteff)—Proxified website scraping using autoupdated list of free proxies
 
 ## :scroll: License
-
+    
 [MIT][license] © [Ionică Bizău][website]
-
+    
 [paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
 [donate-now]: http://i.imgur.com/6cMbHOC.png
 
