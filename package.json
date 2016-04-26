@@ -1,6 +1,6 @@
 {
   "name": "jsonrequest",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "A tiny library for requesting and getting JSON resources.",
   "main": "lib/index.js",
   "scripts": {
@@ -32,5 +32,16 @@
   "devDependencies": {
     "lien": "^1.0.1",
     "mocha": "^2.2.5"
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
