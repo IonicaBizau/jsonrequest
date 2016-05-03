@@ -1,8 +1,8 @@
 // Dependencies
-var JsonRequest = require("../lib");
+var request = require("../lib");
 
 // Make a request to GitHub API
-JsonRequest("https://api.github.com/users/IonicaBizau", function (err, data) {
+request("https://api.github.com/users/IonicaBizau", function (err, data) {
     console.log(err || data);
 });
 // => {
