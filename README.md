@@ -1,5 +1,7 @@
 
-# jsonrequest [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Travis](https://img.shields.io/travis/IonicaBizau/jsonrequest.svg)](https://travis-ci.org/IonicaBizau/jsonrequest/) [![Version](https://img.shields.io/npm/v/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Downloads](https://img.shields.io/npm/dt/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+# jsonrequest
+
+ [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Travis](https://img.shields.io/travis/IonicaBizau/jsonrequest.svg)](https://travis-ci.org/IonicaBizau/jsonrequest/) [![Version](https://img.shields.io/npm/v/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Downloads](https://img.shields.io/npm/dt/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > A tiny library for requesting and getting JSON resources.
 
@@ -16,10 +18,10 @@ $ npm i --save jsonrequest
 
 ```js
 // Dependencies
-var JsonRequest = require("jsonrequest");
+var request = require("jsonrequest");
 
 // Make a request to GitHub API
-JsonRequest("https://api.github.com/users/IonicaBizau", function (err, data) {
+request("https://api.github.com/users/IonicaBizau", function (err, data) {
     console.log(err || data);
 });
 // => {
