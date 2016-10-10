@@ -1,7 +1,7 @@
 
 # jsonrequest
 
- [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Travis](https://img.shields.io/travis/IonicaBizau/jsonrequest.svg)](https://travis-ci.org/IonicaBizau/jsonrequest/) [![Version](https://img.shields.io/npm/v/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Downloads](https://img.shields.io/npm/dt/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+ [![Patreon](https://img.shields.io/badge/Support%20me%20on-Patreon-%23e6461a.svg)][paypal-donations] [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Travis](https://img.shields.io/travis/IonicaBizau/jsonrequest.svg)](https://travis-ci.org/IonicaBizau/jsonrequest/) [![Version](https://img.shields.io/npm/v/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Downloads](https://img.shields.io/npm/dt/jsonrequest.svg)](https://www.npmjs.com/package/jsonrequest) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > A tiny library for requesting and getting JSON resources.
 
@@ -55,6 +55,15 @@ Creates the http(s) request and parses the response.
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
+## :moneybag: Donations
+
+Another way to support the development of my open-source modules is
+to [set up a recurring donation, via Patreon][patreon]. :rocket:
+
+[PayPal donations][paypal-donations] are appreciated too! Each dollar helps.
+
+Thanks! :heart:
+
 ## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
@@ -63,12 +72,12 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`gh.js`](https://github.com/IonicaBizau/gh.js)—Tiny GitHub API wrapper for server and client.
  - [`homebridge-domotiga`](https://github.com/Samfox2/homebridge-domotiga#readme) (by Sam Fox)—domotiga plugin for homebridge: https://github.com/nfarina/homebridge
  - [`ipinfo`](https://github.com/IonicaBizau/node-ipinfo)—An http://ipinfo.io NodeJS wrapper.
- - [`proxyneedle`](https://github.com/selfrefactor/proxyneedle#readme) (by Dejan Toteff)—Proxified website scraping using autoupdated list of free proxies
 
 ## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
+[patreon]: https://www.patreon.com/ionicabizau
 [paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
 [donate-now]: http://i.imgur.com/6cMbHOC.png
 
