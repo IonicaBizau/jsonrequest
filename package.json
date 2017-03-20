@@ -1,6 +1,6 @@
 {
   "name": "jsonrequest",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "description": "A tiny library for requesting and getting JSON resources.",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "request",
     "minimalist"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/jsonrequest/issues"
@@ -37,12 +37,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
