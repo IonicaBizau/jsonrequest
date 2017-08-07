@@ -26,6 +26,7 @@
     "test": "test"
   },
   "dependencies": {
+    "noop6": "^1.0.6",
     "tinyreq": "^3.0.1",
     "ul": "^5.0.0"
   },
