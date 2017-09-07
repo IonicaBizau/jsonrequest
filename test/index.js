@@ -2,19 +2,19 @@
 var JsonRequest = require("../lib")
   , Lien = require("lien")
   , Assert = require("assert")
-  ;
+
 
 // Init lien server
 var server = new Lien({
     host: "localhost"
   , port: 9000
-});
+})
 
 // Handle "/"
 server.addPage("/", function (lien) {
     lien.end({
         Hello: "World"
-    });
+    })
 })
 
 // Handle "/hello"
@@ -22,36 +22,36 @@ server.addPage("/hello", function (lien) {
     lien.end({
         method: lien.method
       , data: lien.data
-    });
-});
+    })
+})
 server.addPage("/empty", function (lien) {
-    lien.end("");
-});
+    lien.end("")
+})
 
 
 server.on("load", function (err) {
-    server._isRunning = true;
-});
+    server._isRunning = true
+})
 
 it("should wait until the server starts", function (cb) {
     if (server._isRunning) {
-        return cb();
+        return cb()
     }
     server.on("load", function (err) {
-        Assert.equal(err, null);
-        cb();
-    });
-});
+        Assert.equal(err, null)
+        cb()
+    })
+})
 
 it("should support data passing in the second argument", function (cb) {
     JsonRequest("http://localhost:9000/", function (err, data) {
-        Assert.equal(err, null);
+        Assert.equal(err, null)
         Assert.deepEqual(data, {
             "Hello": "World"
-        });
-        cb();
-    });
-});
+        })
+        cb()
+    })
+})
 
 it("should support data passing in the options object", function (cb) {
     JsonRequest({
@@ -60,29 +60,29 @@ it("should support data passing in the options object", function (cb) {
             foo: "bar"
         }
     }, function (err, data) {
-        Assert.equal(err, null);
+        Assert.equal(err, null)
         Assert.deepEqual(data, {
             method: "post"
           , data: {
                 foo: "bar"
             }
-        });
-        cb();
-    });
-});
+        })
+        cb()
+    })
+})
 
 it("should support get method and https protocol", function (cb) {
     JsonRequest("https://status.github.com/api.json", function (err, data) {
-        Assert.equal(err, null);
-        Assert.equal(data.constructor === Object, true);
-        cb();
-    });
-});
+        Assert.equal(err, null)
+        Assert.equal(data.constructor === Object, true)
+        cb()
+    })
+})
 
 it("should parse empty responses successfully", function (cb) {
     JsonRequest("http://localhost:9000/empty", function (err, data) {
-        Assert.equal(err, null);
-        Assert.equal(data, "");
-        cb();
-    });
-});
+        Assert.equal(err, null)
+        Assert.equal(data, "")
+        cb()
+    })
+})

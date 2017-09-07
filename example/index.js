@@ -1,5 +1,5 @@
 // Dependencies
-const request = require("../lib");
+const request = require("../lib")
 
 request({
     url: "https://api.github.com/users/IonicaBizau",
@@ -7,7 +7,7 @@ request({
         "User-Agent": "JsonRequest"
     }
 }).then(data => {
-    console.log(data);
+    console.log(data)
     // => {
     //   "login": "IonicaBizau",
     //   "id": 2864371,
@@ -19,10 +19,10 @@ request({
     //   ...
     // }
 }).catch(err => {
-    console.error(err);
-});
+    console.error(err)
+})
 
 // Make a request to GitHub API
 request("https://ionicabizau.net/api/articles", (err, data) => {
-    console.log(err || data);
-});
+    console.log(err || data)
+})
