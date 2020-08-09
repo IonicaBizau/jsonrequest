@@ -1,6 +1,6 @@
 {
   "name": "jsonrequest",
-  "version": "4.2.5",
+  "version": "4.2.6",
   "description": "A tiny library for requesting and getting JSON resources.",
   "main": "lib/index.js",
   "scripts": {
